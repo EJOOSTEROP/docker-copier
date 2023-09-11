@@ -15,7 +15,7 @@ FROM update AS builder
 RUN set -eux; \
   # Install gcc and libraries needed for building regex during pip install step
   apk add --no-cache \
-    gcc=~13.2 \
+    gcc=~10.3 \
     musl-dev=~1.2; \
   # Install copier
   pip install --no-cache-dir copier==8.3.0; \
