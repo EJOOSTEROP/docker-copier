@@ -15,10 +15,10 @@ FROM update AS builder
 RUN set -eux; \
   # Install gcc and libraries needed for building regex during pip install step
   apk add --no-cache \
-    gcc=~10.3 \
+    gcc=~13.2 \
     musl-dev=~1.2; \
   # Install copier
-  pip install --no-cache-dir copier==5.1.0; \
+  pip install --no-cache-dir copier==8.3.0; \
   apk del \
     gcc \
     musl-dev
@@ -40,7 +40,7 @@ RUN set -eux; \
 RUN set -eux; \
   apk add --no-cache \
     # Install git, dependency of copier
-    git=~2.32 \
+    git=~2.42 \
     # Install su-exec to drop down from root when running copier
     su-exec=0.2-r1
 
