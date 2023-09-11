@@ -4,7 +4,7 @@ Lightweight alpine-based Docker container to securely run [copier](https://githu
 
 You can read the copier documentation [here](https://copier.readthedocs.io/en/stable/).
 
-This repository is cloned from [here](https://github.com/cbp44/docker-copier), and re-purposed primarily for personal use. 
+This repository is forked from [here](https://github.com/cbp44/docker-copier), and re-purposed primarily for personal use. 
 
 ### Features
 - Based on official `python:3.10-alpine` image
