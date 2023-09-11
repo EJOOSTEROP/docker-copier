@@ -29,14 +29,14 @@ docker run --rm ghcr.io/ejoosterop/docker-copier copier --version
 
 ### Copy a Template
 
-The example usage below creates a new Snakemake workflow from the [`snakemake-workflow-template`](https://github.com/snakemake-workflows/snakemake-workflow-template) GitHub repository.
+The example usage below creates a new Python project using [GitHub](https://github.com/EJOOSTEROP/copier-python) repository.
 
 ```shell
 # Path where copier output will go
 mkdir workflow
 
 # Using curly brackets in ${pwd} for Windows.
-docker run --rm -it -v ${pwd}/workflow:/usr/src/copier ghcr.io/ejoosterop/docker-copier copier copy gh:snakemake-workflows/snakemake-workflow-template /usr/src/copier
+docker run --rm -it -v ${pwd}/workflow:/usr/src/copier ghcr.io/ejoosterop/docker-copier copier copy gh:EJOOSTEROP/copier-python /usr/src/copier
 
 # Output will be in $(pwd)/workflow
 ```
