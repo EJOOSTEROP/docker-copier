@@ -16,12 +16,7 @@ RUN set -eux; \
   # Install gcc and libraries needed for building regex during pip install step
   apk add --no-cache \
     gcc=~10.3 \
-    musl-dev=~1.2; \
-  # Install copier
-  pip install --no-cache-dir copier==5.1.0; \
-  apk del \
-    gcc \
-    musl-dev
+    musl-dev=~1.2;
 #################### /builder ####################
 
 #################### final ####################
