@@ -8,8 +8,7 @@ set -eu
 
 printenv
 
-# Disable: seems to results in uneditable files in devcontainer.
-if [ "$1" = 'copierXXX' ]; then
+if [ "$1" = 'copier' ]; then
   set -x
   
   # Running copier command, drop to unpriviledged user.
