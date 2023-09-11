@@ -8,9 +8,9 @@ This repository is cloned from [here](https://github.com/cbp44/docker-copier), a
 
 ### Features
 - Based on official `python:3.10-alpine` image
-~~- Runs copier as non-root user~~
+- Runs copier as non-root user
 - Default volume configuration persists results back to the host machine
-~~- Mounts `~/.ssh` as read-only inside container so copier can work with your private GitHub repositories~~
+- ~~Mounts `~/.ssh` as read-only inside container so copier can work with your private GitHub repositories~~
 - Uses multi-stage builds to trim size of final image
 
 View on [GitHub Registry](ghcr.io/ejoosterop/docker-copier).
