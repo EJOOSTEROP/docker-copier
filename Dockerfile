@@ -18,7 +18,7 @@ RUN set -eux; \
     gcc=~10.3 \
     musl-dev=~1.2; \
   # Install copier
-  pip install --no-cache-dir copier==8.3.0; \
+  pip install --no-cache-dir copier==5.1.0; \
   apk del \
     gcc \
     musl-dev
